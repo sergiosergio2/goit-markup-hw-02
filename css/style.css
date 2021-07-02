@@ -1,9 +1,31 @@
+
+
+:root {
+  --primary-color:#212121;
+  --text-color:#757575;
+  --accent-color:#2196F3;
+
+}
+
+
+/* основной цвет текста #212121 */
+/* второй цвет текста 
+#757575 */
+/* белый цвет текста #FFFFFF */
+/* цвет акцента #2196F3 */
+
+body {
+  background-color: #ffffff;
+font-family: 'Roboto', sans-serif;
+color: var(--primary-color);
+}
 .list {
   text-decoration: none;
 }
 .link {
   list-style: none;
 }
+
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -21,44 +43,42 @@
 }
 /* logo end */
 .menu-link {
-  font-family: "Roboto", sans-serif;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  color: #212121;
-}
-.menu-link-b {
-  color: #2196f3;
+  color: inherit
+ }
+.menu-link-activ {
+  color: var(--accent-color);
 }
 .menu-link:hover,
-.menu-link:focus {
-  color: #2196f3;
+.menu-link:focus,
+.mailto-link:hover,
+ .mailto-link:focus {
+  color: var(--accent-color);
 }
 .mailto-link {
-  font-family: "Roboto", sans-serif;
-
-  font-weight: 500;
+  
+font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color:var(--text-color);
 }
 .tel-link {
-  font-family: "Roboto", sans-serif;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color:var(--text-color);
 }
 /* ====hero section==== */
 .hero-title {
-  font-family: "Roboto", sans-serif;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -71,81 +91,92 @@
   /* color: #ffffff; */
 }
 .modal-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
 
   /* identical to box height, or 187% */
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+ cursor: pointer;
 
   color: #ffffff;
-  background: #2196f3;
+  background: var(--accent-color);
 }
-.why-we-title {
-  font-family: "Roboto", sans-serif;
+/* =====END HERO===== */
+.advantages {
 
+}
+.advantages-list {
+
+}
+
+.advantages-list-title {
+ 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+ 
 }
-.why-we-text {
-  font-family: "Roboto", sans-serif;
+.advantages-text {
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--text-color);
 }
-.activities-title.team-title {
-  font-family: "Roboto", sans-serif;
-
+.scills-title {
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
-}
-.team-participant {
-  font-family: "Roboto", sans-serif;
+ }
+ /* =========КОМАНДА team======== */
+ .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+}
+
+.team-names {
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
 
-  text-align: center;
+  
   letter-spacing: 0.03em;
 
-  color: #212121;
+  
 }
-.team-participant-prof {
-  font-family: "Roboto", sans-serif;
 
+.team-professions {
+  
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
 
-  text-align: center;
+ 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--text-color);
 }
+
+/* ===========FOOTER============== */
 .logo-footer {
   font-family: "Raleway", sans-serif;
 
@@ -159,7 +190,7 @@
   color: #2196f3;
 }
 .address-post {
-  font-family: "Roboto", sans-serif;
+  
 
   font-weight: 400;
   font-size: 14px;
@@ -170,8 +201,9 @@
 
   /* color: #ffffff; */
 }
+.address-tel,
 .address-mail {
-  font-family: "Roboto", sans-serif;
+  
 
   font-weight: 400;
   font-size: 14px;
@@ -182,33 +214,27 @@
 
   /* color: rgba(255, 255, 255, 0.6); */
 }
-.address-tel {
-  font-family: "Roboto", sans-serif;
+ 
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  /* color: rgba(255, 255, 255, 0.6); */
+.work-menu {
 }
-.menu-scills {
-  font-family: "Roboto", sans-serif;
-
+.work-menu-btn {
+    
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+
   /* identical to box height, or 162% */
 
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
+  color:var(--primary-color);
+  background: #2196f3;
+  cursor: pointer;
+    
 }
 .client-title {
-  font-family: "Roboto", sans-serif;
+  
 
   font-weight: 700;
   font-size: 18px;
@@ -220,8 +246,6 @@
   color: #212121;
 }
 .client-order {
-  font-family: "Roboto", sans-serif;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
