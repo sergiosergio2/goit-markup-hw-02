@@ -60,6 +60,8 @@ color: var(--primary-color);
  .mailto-link:focus {
   color: var(--accent-color);
 }
+
+
 .mailto-link {
   
 font-weight: 500;
@@ -70,6 +72,7 @@ font-weight: 500;
   color:var(--text-color);
 }
 .tel-link {
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -204,6 +207,16 @@ font-weight: 500;
   letter-spacing: 0.03em;
 
   /* color: #ffffff; */
+}
+.footer-tel:focus,
+.footer-mailto:focus {
+  font-style: normal;
+  cursor: inherit;
+}
+.footer-tel:hover,
+.footer-mailto:hover {
+  font-style: normal;
+  cursor:inherit;
 }
 .address-tel,
 .address-mail {
