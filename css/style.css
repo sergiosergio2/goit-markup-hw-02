@@ -197,6 +197,7 @@ font-weight: 500;
   font-style: normal;
 }
 .address-post {
+  margin-bottom: 9px;
   
 
   font-weight: 400;
@@ -208,18 +209,10 @@ font-weight: 500;
 
   /* color: #ffffff; */
 }
-.footer-tel:focus,
-.footer-mailto:focus {
-  font-style: normal;
-  cursor: inherit;
-}
-.footer-tel:hover,
-.footer-mailto:hover {
-  font-style: normal;
-  cursor:inherit;
-}
 .address-tel,
 .address-mail {
+  display: block;
+  font-style: normal;
   
 
   font-weight: 400;
@@ -230,6 +223,15 @@ font-weight: 500;
   letter-spacing: 0.03em;
 
   /* color: rgba(255, 255, 255, 0.6); */
+}
+.address-mail {
+  margin-bottom: 9px;
+}
+.address-tel:hover,
+.address-mail:hover {
+ 
+ cursor: inherit;
+
 }
  /* ======ПОРТФОЛИО========= */
 
